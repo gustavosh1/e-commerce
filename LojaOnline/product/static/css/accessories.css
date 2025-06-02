@@ -52,11 +52,11 @@
             opacity: 0.9;
         }
 
-        .category-section {
+        .category_section {
             margin-bottom: 4rem;
         }
 
-        .category-title {
+        .category_title {
             color: white;
             font-size: 2rem;
             text-align: center;
@@ -64,14 +64,14 @@
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
         }
 
-        .products-grid {
+        .products_grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
             margin-bottom: 3rem;
         }
 
-        .product-card {
+        .product_card {
             background: rgba(255, 255, 255, 0.95);
             border-radius: 20px;
             padding: 1.5rem;
@@ -82,12 +82,12 @@
             overflow: hidden;
         }
 
-        .product-card:hover {
+        .product_card:hover {
             transform: translateY(-10px);
             box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
         }
 
-        .product-image {
+        .product_image {
             width: 150px;
             height: 150px;
             background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
@@ -101,32 +101,32 @@
             transition: transform 0.3s ease;
         }
 
-        .product-card:hover .product-image {
+        .product_card:hover .product_image {
             transform: scale(1.1);
         }
 
-        .product-name {
+        .product_name {
             font-size: 1.3rem;
             font-weight: bold;
             color: #333;
             margin-bottom: 0.5rem;
         }
 
-        .product-description {
+        .product_description {
             color: #666;
             font-size: 0.9rem;
             margin-bottom: 1rem;
             line-height: 1.4;
         }
 
-        .product-price {
+        .product_price {
             font-size: 1.5rem;
             font-weight: bold;
             color: #e74c3c;
             margin-bottom: 1rem;
         }
 
-        .old-price {
+        .old_price {
             text-decoration: line-through;
             color: #999;
             font-size: 1rem;
@@ -196,12 +196,12 @@
                 font-size: 2rem;
             }
             
-            .products-grid {
+            .products_grid {
                 grid-template-columns: 1fr;
                 gap: 1.5rem;
             }
             
-            .product-card {
+            .product_card {
                 padding: 1.5rem;
             }
         }

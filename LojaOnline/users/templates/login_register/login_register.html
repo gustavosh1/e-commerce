@@ -10,47 +10,47 @@
 </head>
 <body>
     <div class="container">
-        <div class="form-container">
+        <div class="form_container">
             <div class="form" id="loginForm">
                 <h2>Entrar</h2>
-                <div class="success-message" id="successMessage"></div>
+                <div class="success_message" id="successMessage"></div>
                 <form onsubmit="handleLogin(event)">
-                    <div class="input-group">
+                    <div class="input_group">
                         <input type="email" placeholder="E-mail" required>
                     </div>
-                    <div class="input-group">
+                    <div class="input_group">
                         <input type="password" placeholder="Senha" required>
                     </div>
                     <a type="submit" class="btn" onclick="loginUsuario()">Entrar</a>
                 </form>
-                <div class="forgot-password">
+                <div class="forgot_password">
                     <a href="#" onclick="showForgotPassword()">Esqueceu a senha?</a>
                 </div>
-                <div class="toggle-text">
-                    Não tem uma conta? <span class="toggle-link" onclick="showSignup()">Cadastre-se</span>
+                <div class="toggle_text">
+                    Não tem uma conta? <span class="toggle_link" onclick="showSignup()">Cadastre-se</span>
                 </div>
             </div>
 
             <div class="form hidden" id="signupForm">
                 <h2>Cadastrar</h2>
-                <div class="success-message" id="signupSuccessMessage"></div>
+                <div class="success_message" id="signupSuccessMessage"></div>
                 <form onsubmit="handleSignup(event)">
-                    <div class="input-group">
+                    <div class="input_group">
                         <input type="text" placeholder="Nome completo" required>
                     </div>
-                    <div class="input-group">
+                    <div class="input_group">
                         <input type="email" placeholder="E-mail" required>
                     </div>
-                    <div class="input-group">
+                    <div class="input_group">
                         <input type="password" placeholder="Senha" required minlength="6">
                     </div>
-                    <div class="input-group">
+                    <div class="input_group">
                         <input type="password" placeholder="Confirmar senha" required minlength="6">
                     </div>
                     <button type="submit" class="btn">Cadastrar</button>
                 </form>
-                <div class="toggle-text">
-                    Já tem uma conta? <span class="toggle-link" onclick="showLogin()">Faça login</span>
+                <div class="toggle_text">
+                    Já tem uma conta? <span class="toggle_link" onclick="showLogin()">Faça login</span>
                 </div>
             </div>
         </div>

@@ -10,7 +10,7 @@
 
         // Animação de entrada
         window.addEventListener('load', function() {
-            const cards = document.querySelectorAll('.product-card');
+            const cards = document.querySelectorAll('.product_card');
             cards.forEach((card, index) => {
                 card.style.opacity = '0';
                 card.style.transform = 'translateY(50px)';
@@ -24,7 +24,7 @@
         });
 
         // Efeito hover 3D
-        document.querySelectorAll('.product-card').forEach(card => {
+        document.querySelectorAll('.product_card').forEach(card => {
             card.addEventListener('mousemove', function(e) {
                 const rect = card.getBoundingClientRect();
                 const x = e.clientX - rect.left;

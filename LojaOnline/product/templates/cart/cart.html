@@ -12,32 +12,32 @@
     <div class="container">
         <h1>Carrinho de Compras</h1>
 
-        <div id="cart-items">
+        <div id="cart_items">
             <!-- Itens do carrinho aparecerão aqui -->
         </div>
 
-        <div id="empty-message" style="display: none;">
-            <div class="empty-cart" >
+        <div id="empty_message" style="display: none;">
+            <div class="empty_cart" >
                 <h3>Seu carrinho está vazio</h3>
                 <p>Adicione alguns produtos para começar suas compras!</p>
             </div>
-            <a class="add-item-btn" href="{% url 'menu' %}">Adicionar Produto</a>
+            <a class="add_item" href="{% url 'menu' %}">Adicionar Produto</a>
         </div>
 
-        <div class="cart-summary" id="summary">
-            <div class="summary-row">
+        <div class="cart_summary" id="summary">
+            <div class="summary_row">
                 <span>Subtotal:</span>
                 <span id="subtotal">R$ 0,00</span>
             </div>
-            <div class="summary-row">
+            <div class="summary_row">
                 <span>Frete:</span>
                 <span>R$ 10,00</span>
             </div>
-            <div class="summary-row total-row">
+            <div class="summary_row total_row">
                 <span>Total:</span>
                 <span id="total">R$ 10,00</span>
             </div>
-            <button class="checkout-btn" onclick="finalizarCompra()">Finalizar Compra</button>
+            <button class="checkout_btn" onclick="finalizarCompra()">Finalizar Compra</button>
         </div>
     </div>
 
