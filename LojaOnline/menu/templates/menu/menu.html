@@ -24,7 +24,7 @@
         <div class="container">
             <h2 class="section_title">Principais Marcas</h2>
             <div class="brands_grid">
-                <a href="#apple" class="brand_card">
+                <a href="{% url 'smartphones_marca' 'apple' %}" class="brand_card">
                     <div class="brand_image brand_apple">🍎</div>
                     <div class="brand_info">
                         <h3>Apple</h3>
@@ -32,7 +32,7 @@
                     </div>
                 </a>
                 
-                <a href="#samsung" class="brand_card">
+                <a href="{% url "smartphones_marca" "samsung" %}" class="brand_card">
                     <div class="brand_image brand_samsung">📱</div>
                     <div class="brand_info">
                         <h3>Samsung</h3>
@@ -40,7 +40,7 @@
                     </div>
                 </a>
                 
-                <a href="#xiaomi" class="brand_card">
+                <a href="{% url "smartphones_marca" "xiaomi" %}" class="brand_card">
                     <div class="brand_image brand_xiaomi">🔥</div>
                     <div class="brand_info">
                         <h3>Xiaomi</h3>
@@ -48,7 +48,7 @@
                     </div>
                 </a>
                 
-                <a href="#motorola" class="brand_card">
+                <a href="{% url "smartphones_marca" "motorola" %}" class="brand_card">
                     <div class="brand_image brand_motorola">⚡</div>
                     <div class="brand_info">
                         <h3>Motorola</h3>
@@ -56,7 +56,7 @@
                     </div>
                 </a>
                 
-                <a href="#lg" class="brand_card">
+                <a href="{% url "smartphones_marca" "lg" %}" class="brand_card">
                     <div class="brand_image brand_lg">📺</div>
                     <div class="brand_info">
                         <h3>LG</h3>
@@ -71,7 +71,7 @@
         <div class="container">
             <h2 class="section_title">Categorias em Destaque</h2>
             <div class="categories_grid">
-                <a href="#premium" class="category_card">
+                <a href="{% url "smartphones_categoria" "premium" %}" class="category_card">
                     <div class="category_image">
                         💎
                         <div class="category_name">Premium</div>
@@ -83,7 +83,7 @@
                     </div>
                 </a>
                 
-                <a href="#intermediarios" class="category_card">
+                <a href="{% url "smartphones_categoria" "intermediario" %}" class="category_card">
                     <div class="category_image">
                         ⚡
                         <div class="category_name">Popular</div>
@@ -95,7 +95,7 @@
                     </div>
                 </a>
                 
-                <a href="#acessorios" class="category_card">
+                <a href="{% url "smartphones_categoria" "acessorios" %}" class="category_card">
                     <div class="category_image">
                         🎧
                         <div class="category_name">Novidade</div>
@@ -107,7 +107,7 @@
                     </div>
                 </a>
                 
-                <a href="#ofertas" class="category_card">
+                <a href="{% url "smartphones_categoria" "promocoes" %}" class="category_card">
                     <div class="category_image">
                         🔥
                         <div class="category_name">Oferta</div>

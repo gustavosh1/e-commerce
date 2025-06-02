@@ -17,3 +17,8 @@ def launch(request):
 
 def cart(request):
     return render(request, "cart/cart.html")
+
+def smartphones_marca(request, marca):
+    #lista = NOMEDATABELA.objects.filter(marca__iexact=marca)
+    #return render(request, "smartphones/smartphones.html", {"smartphones": lista})
+    print("oi")
