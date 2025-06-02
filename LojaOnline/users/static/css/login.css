@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: url("/static/image/fundo.jpg");
+    background-color: #f1f1f1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#mensagemErro {
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 4%;
+    box-shadow: 0 1px 3px 0px #00000070;
+    width: 600px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.label_float input {
+    width: 100%;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 23px;
+    transition: all .3s ease-out;
+    border-radius: 0;
+}
+
+.label_float {
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label_float input:focus {
+    border-bottom: 2px solid;
+}
+
+.label_float label {
+    pointer-events: none;
+    position: absolute;
+    top: 1px;
+    left: 5px;
+    margin-top: 15px;
+    transition: all .3s ease-out;
+    font-size: 20px;
+}
+
+.label_float input:focus + label ,
+.label_float input:valid + label {
+    font-size: 18px;
+    margin-top: -15px;
+}
+
+button {
+    background-color: transparent;
+    border-color: black;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all .4s ease-out;
+}
+
+button:hover {
+    background-color: #0c0d1929;
+}
+
+.justify_center {
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 70%;
+}
+
+p {
+    font-size: 22px;
+    text-align: center;
+}
+
+a {
+    color: #0000ff8f;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .3s ease-out;
+}
+
+a:hover {
+    color: #2f54eb;
+}
+
+.fa-eye-slash {
+    position: absolute;
+    right: 3px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.fa-eye {
+    position: absolute;
+    right: 3px;
+    font-size: 20px;
+    cursor: pointer;
+}

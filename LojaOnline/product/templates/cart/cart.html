@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - Loja Online</title>
+
+    {% load static %}
+     <link rel="stylesheet" href="{% static "css/cart.css" %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Carrinho de Compras</h1>
+
+        <div id="cart-items">
+            <!-- Itens do carrinho aparecerão aqui -->
+        </div>
+
+        <div id="empty-message" style="display: none;">
+            <div class="empty-cart" >
+                <h3>Seu carrinho está vazio</h3>
+                <p>Adicione alguns produtos para começar suas compras!</p>
+            </div>
+            <a class="add-item-btn" href="{% url 'menu' %}">Adicionar Produto</a>
+        </div>
+
+        <div class="cart-summary" id="summary">
+            <div class="summary-row">
+                <span>Subtotal:</span>
+                <span id="subtotal">R$ 0,00</span>
+            </div>
+            <div class="summary-row">
+                <span>Frete:</span>
+                <span>R$ 10,00</span>
+            </div>
+            <div class="summary-row total-row">
+                <span>Total:</span>
+                <span id="total">R$ 10,00</span>
+            </div>
+            <button class="checkout-btn" onclick="finalizarCompra()">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <script src="{% static "js/cart.js" %}"></script>
+</body>
+</html>

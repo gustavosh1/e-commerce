@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MobileWorld - Sua Loja de Celulares</title>
+ 
+    {% load static %}
+    <link rel="stylesheet" href="{% static "css/menu.css" %}">
+</head>
+<body>
+    <header>
+        <div class="sidebar">
+            <div class="container">
+                <div class="sidebar_container">
+                    <div class="info">
+                        <span>🚚 Frete Grátis acima de R$ 199</span>
+                    </div>
+                    <div class="user_actions">
+                        <a href="{% url "welcome" %}">Entrar ou Cadastrar</a>
+                        <a href="#wishlist">❤️ Favoritos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="main_header">
+                <a href="#" class="logo">
+                    📱 MobileWorld
+                </a>
+                
+                <div class="search_bar">
+                    <input type="text" placeholder="Buscar celulares, acessórios...">
+                    <button class="search_btn">🔍</button>
+                </div>
+
+                <div class="cart">
+                    <a href="{% url "cart" %}" class="cart_icon">
+                        🛒
+                        <span class="cart_page"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <div class="container">
+                <ul class="option_menu">
+                    <li>
+                        <a href="{% url "menu" %}">Início</a>
+                    </li>
+                    <li>
+                        <a href="{% url "smartphones" %}">Smartphones</a>
+                        <ul class="dropdown">
+                            <li><a href="#premium">💎 Premium</a></li>
+                            <li><a href="#intermediarios">⚡ Intermediários</a></li>
+                            <li><a href="#basicos">🔋 Básicos</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="{% url "brand" %}">Marcas</a>
+                        <ul class="dropdown">
+                            <li><a href="#apple">🍎 Apple</a></li>
+                            <li><a href="#samsung">📱 Samsung</a></li>
+                            <li><a href="#xiaomi">🔥 Xiaomi</a></li>
+                            <li><a href="#motorola">⚡ Motorola</a></li>
+                            <li><a href="#lg">📺 LG</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="{% url "accessories" %}">Acessórios</a>
+                        <ul class="dropdown">
+                            <li><a href="#capas">🛡️ Capas e Películas</a></li>
+                            <li><a href="#carregadores">🔌 Carregadores</a></li>
+                            <li><a href="#fones">🎧 Fones de Ouvido</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="{% url "promotion" %}">Promoções</a>
+                    </li>
+                    <li>
+                        <a href="{% url "launch" %}">Lançamentos</a>
+                    </li>
+                    <!--
+                    <li>
+                        <a href="#suporte">Suporte</a>
+                        <ul class="dropdown">
+                            <li><a href="#garantia">🛡️ Garantia</a></li>
+                            <li><a href="#troca">🔄 Trocas</a></li>
+                            <li><a href="#assistencia">🔧 Assistência</a></li>
+                            <li><a href="#contato">📞 Contato</a></li>
+                        </ul>
+                    </li>
+                    -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <scrip src="js/header.js"></script>
+</body>
