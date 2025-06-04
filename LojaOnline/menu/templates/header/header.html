@@ -50,15 +50,7 @@
                         <a href="{% url "menu" %}">Início</a>
                     </li>
                     <li>
-                        <a href="{% url "smartphones" %}">Smartphones</a>
-                        <ul class="dropdown">
-                            <li><a href="{% url "smartphones_categoria" "premium" %}">💎 Premium</a></li>
-                            <li><a href="{% url "smartphones_categoria" "intermediario" %}">⚡ Intermediários</a></li>
-                            <li><a href="{% url "smartphones_categoria" "basicos" %}">🔋 Básicos</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="{% url "brand" %}">Marcas</a>
+                        <a href="{% url "brand" %}">Smartphones</a>
                         <ul class="dropdown">
                             <li><a href="{% url 'smartphones_marca' 'apple' %}">🍎 Apple</a></li>
                             <li><a href="{% url 'smartphones_marca' 'samsung' %}">📱 Samsung</a></li>
