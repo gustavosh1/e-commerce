@@ -138,14 +138,6 @@ body {
   background: linear-gradient(135deg, #0066cc, #004499);
 }
 
-.lg_header {
-  background: linear-gradient(135deg, #a50034, #d6336c);
-  color: white;
-}
-.lg_header::before {
-  background: linear-gradient(135deg, #a50034, #d6336c);
-}
-
 .brand_logo {
   font-size: 4em;
   font-weight: 900;
@@ -194,9 +186,6 @@ body {
 .motorola_card::before {
   background: linear-gradient(45deg, #0066cc, #004499);
 }
-.lg_card::before {
-  background: linear-gradient(45deg, #a50034, #d6336c);
-}
 
 .product_card:hover {
   transform: translateY(-10px);
@@ -227,9 +216,6 @@ body {
 }
 .motorola_image {
   background: linear-gradient(135deg, #0066cc, #004499);
-}
-.lg_image {
-  background: linear-gradient(135deg, #a50034, #d6336c);
 }
 
 .product_image::after {
@@ -283,9 +269,6 @@ body {
 .motorola_price {
   color: #0066cc;
 }
-.lg_price {
-  color: #a50034;
-}
 
 .product_price .old_price {
   font-size: 0.7em;
@@ -320,9 +303,6 @@ body {
 .motorola_btn {
   background: linear-gradient(45deg, #0066cc, #004499);
 }
-.lg_btn {
-  background: linear-gradient(45deg, #a50034, #d6336c);
-}
 
 .buy_btn:hover {
   transform: translateY(-2px);
@@ -351,9 +331,6 @@ body {
 }
 .motorola_badge {
   background: #0066cc;
-}
-.lg_badge {
-  background: #a50034;
 }
 
 @media (max-width: 768px) {
