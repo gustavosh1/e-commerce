@@ -3,71 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mundo Tech - Promoções Imperdíveis</title>
+    <title>Mundo Tech -Promoções ótimas</title>
   
     {% load static %}
     <link rel="stylesheet" href="{% static "css/promotion.css" %}">
 </head>
 <body>
-
+   
     {% include "header/header.html" %}
 
-
-        <div class="products_grid">
-            <div class="product_card">
-                <div class="flash_sale">PROMOÇÃO</div>
-                <div class="product_image">📱</div>
-                <div class="product_name">Kit Proteção Total</div>
-                <div class="product_description">Capa Anti-Impacto + Película 9H + Pop Socket. Kit completo para máxima proteção!</div>
-                <div class="price_section">
-                    <span class="old_price">R$ 59,90</span>
-                    <span class="new_price">R$ 35,90</span>
-                </div>
-                <button class="btn" onclick="comprar('Kit Proteção Total', '35,90')">COMPRAR</button>
-            </div>
-
-            <div class="product_card">
-                <div class="flash_sale">PROMOÇÃO</div>
-                <div class="product_image">⚡</div>
-                <div class="product_name">Carregador Turbo + Cabo</div>
-                <div class="product_description">Carregador rápido 33W + Cabo USB-C de 2 metros. Carregamento ultra rápido!</div>
-                <div class="price_section">
-                    <span class="old_price">R$ 49,90</span>
-                    <span class="new_price">R$ 35,90</span>
-                </div>
-                <button class="btn" onclick="comprar('Carregador Turbo + Cabo', '23,90')">COMPRAR</button>
-            </div>
-
-            <div class="product_card">
-                <div class="flash_sale">PROMOÇÃO</div>
-                <div class="product_image">🚗</div>
-                <div class="product_name">Kit Suporte Veicular</div>
-                <div class="product_description">Suporte magnético + Carregador veicular + Cabo. Tudo para usar no carro!</div>
-                <div class="price_section">
-                    <span class="old_price">R$ 29,90</span>
-                    <span class="new_price">R$ 14,90</span>
-                </div>
-                <button class="btn" onclick="comprar('Kit Suporte Veicular', '34,90')">COMPRAR</button>
-            </div>
-
-            <div class="product_card">
-                <div class="flash_sale">PROMOÇÃO</div>
-                <div class="product_image">📱</div>
-                <div class="product_name">Base Carregamento Wireless</div>
-                <div class="product_description">Carregamento sem fio 15W, LED indicador, compatível com todos os smartphones.</div>
-                <div class="price_section">
-                    <span class="old_price">R$ 39,90</span>
-                    <span class="new_price">R$ 25,90</span>
-                </div>
-                <button class="btn" onclick="comprar('Base Carregamento Wireless', '49,90')">COMPRAR</button>
-            </div>
+        <div class="filters">
         </div>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Mundo Tech</p>
-            <p>Atenção, ofertas por tempo limitado!</p>
+        <div class="products_grid" id="productsGrid">
+            <!-- Celulares -->
+            <div class="product_card category_celular" data-category="celulares">
+                <div class="product_image">📱</div>
+                <div class="new_badge">NOVO</div>
+                <div class="product_info">
+                    <div class="brand">Samsung</div>
+                    <h3 class="product_name">Galaxy S25 Ultra</h3>
+                    <p class="product_description">Tela Dynamic AMOLED 6.8", câmera 200MP, S Pen integrada</p>
+                    <div class="price_section">
+                        <div>
+                            <span class="price">R$6.499,00</span>
+                        </div>
+                    </div>
+                    <button class="buy_btn">Comprar</button>
+                </div>
+            </div>
+
+            <div class="product_card category_celular" data-category="celulares">
+                <div class="product_image">📱</div>
+                <div class="new_badge">NOVO</div>
+                <div class="product_info">
+                    <div class="brand">Apple</div>
+                    <h3 class="product_name">iPhone 16 Plus</h3>
+                    <p class="product_description">Chip A17 Pro, câmera 48MP, titânio, USB-C</p>
+                    <div class="price_section">
+                        <div>
+                            <span class="price">R$3.950,00</span>
+                        </div>
+                    </div>
+                    <button class="buy_btn">Comprar</button>
+                </div>
+            </div>
+
+            <!-- Acessórios -->
+            <div class="product_card category_acessorio" data-category="acessorios">
+                <div class="product_image">🎧</div>
+                <div class="new_badge">NOVO</div>
+                <div class="product_info">
+                    <div class="brand">Apple</div>
+                    <h3 class="product_name">AirPods Max</h3>
+                    <p class="product_description">Cancelamento de ruído líder, 30h bateria, áudio Hi-Res</p>
+                    <div class="price_section">
+                        <div>
+                            <span class="price">R$4.430,00</span>
+                        </div>
+                    </div>
+                    <button class="buy_btn">Comprar</button>
+                </div>
+            </div>
+
+            <div class="product_card category_acessorio" data-category="acessorios">
+                <div class="product_image">⌚</div>
+                <div class="new_badge">NOVO</div>
+                <div class="product_info">
+                    <div class="brand">Samsung</div>
+                    <h3 class="product_name">Galaxy Watch 7</h3>
+                    <p class="product_description">Tela Super AMOLED, GPS, monitoramento saúde 24/7</p>
+                    <div class="price_section">
+                        <div>
+                            <span class="price">R$1.299,00</span>
+                        </div>
+                    </div>
+                    <button class="buy_btn">Comprar</button>
+                </div>
+            </div>
         </div>
-    </footer>
+    </div>
+
+    <script src="{% static "js/promotion.js" %}"></script>
 </body>
 </html>
