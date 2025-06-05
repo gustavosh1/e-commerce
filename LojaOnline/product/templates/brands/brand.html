@@ -3,187 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mundo Tech - Smartphones por Marca</title>
-    
+    <title>Mundo Tech - Lançamentos incríveis</title>
+  
     {% load static %}
-    <link rel="stylesheet" href="{% static "css/brand.css" %}">
+    <link rel="stylesheet" href="{% static "css/launch.css" %}">
 </head>
 <body>
    
     {% include "header/header.html" %}
 
-    <!--
-    <div class="container">
-        <div class="brand-tabs">
-            <button class="tab-btn active" onclick="showBrand('all')">🏪 Todas</button>
-            <button class="tab-btn" onclick="showBrand('apple')">🍎 Apple</button>
-            <button class="tab-btn" onclick="showBrand('samsung')">📱 Samsung</button>
-            <button class="tab-btn" onclick="showBrand('xiaomi')">⚡ Xiaomi</button>
+        <div class="filters">
         </div>
+
+        <div class="products_grid" id="productsGrid">
+            <!-- Celulares -->
+            <div class="product_card category_celular" data-category="celulares">
+                <div class="product_image">📱</div>
+                <div class="new_badge">NOVO</div>
+                <div class="product_info">
+                    <div class="brand">Samsung</div>
+                    <h3 class="product_name">Galaxy S25 Ultra</h3>
+                    <p class="product_description">Tela Dynamic AMOLED 6.8", câmera 200MP, S Pen integrada</p>
+                    <div class="price_section">
+                        <div>
+                            <span class="price">R$6.499,00</span>
+                        </div>
+                    </div>
+                    <button class="buy_btn">Comprar</button>
+                </div>
+            </div>
+
+            <div class="product_card category_celular" data-category="celulares">
+                <div class="product_image">📱</div>
+                <div class="new_badge">NOVO</div>
+                <div class="product_info">
+                    <div class="brand">Apple</div>
+                    <h3 class="product_name">iPhone 16 Plus</h3>
+                    <p class="product_description">Chip A17 Pro, câmera 48MP, titânio, USB-C</p>
+                    <div class="price_section">
+                        <div>
+                            <span class="price">R$3.950,00</span>
+                        </div>
+                    </div>
+                    <button class="buy_btn">Comprar</button>
+                </div>
+            </div>
+
+            <div class="product_card category_celular" data-category="celulares">
+                <div class="product_image">📱</div>
+                <div class="new_badge">NOVO</div>
+                <div class="product_info">
+                    <div class="brand">Apple</div>
+                    <h3 class="product_name">iPhone 16 Plus</h3>
+                    <p class="product_description">Chip A17 Pro, câmera 48MP, titânio, USB-C</p>
+                    <div class="price_section">
+                        <div>
+                            <span class="price">R$3.950,00</span>
+                        </div>
+                    </div>
+                    <button class="buy_btn">Comprar</button>
+                </div>
+            </div>
+
+            <div class="product_card category_celular" data-category="celulares">
+                <div class="product_image">📱</div>
+                <div class="new_badge">NOVO</div>
+                <div class="product_info">
+                    <div class="brand">Apple</div>
+                    <h3 class="product_name">iPhone 16e</h3>
+                    <p class="product_description">Chip A17 Pro, câmera 48MP, titânio, USB-C</p>
+                    <div class="price_section">
+                        <div>
+                            <span class="price">R$3.950,00</span>
+                        </div>
+                    </div>
+                    <button class="buy_btn">Comprar</button>
+                </div>
+            </div>
     </div>
--->
-    <div class="products_section">
-        <div class="container">
-            <!-- Apple -->
-            <div class="brand_section" data-brand="apple">
-                <div class="brand_header apple_header">
-                    <div class="brand_title">Apple</div>
-                </div>
-                <div class="products_grid">
-                    <div class="product_card apple_card">
-                        <div class="brand_badge apple_badge">Apple</div>
-                        <div class="product_image apple_image"></div>
-                        <h3 class="product_name">iPhone 16</h3>
-                        <div class="product_specs">
-                            • Tela 6.7" Super Retina XDR<br>
-                            • Chip A17 Pro com GPU 6-core<br>
-                            • Câmera 48MP + 12MP + 12MP<br>
-                            • 256GB de armazenamento<br>
-                            • 5G, Face ID, Titânio Natural
-                        </div>
-                        <div class="product_price apple_price">R$ 9.499</div>
-                        <button class="buy_btn apple_btn" onclick="buyProduct('iPhone 15 Pro Max')">Comprar Agora</button>
-                    </div>
 
-                    <div class="product_card apple_card">
-                        <div class="brand_badge apple_badge">Apple</div>
-                        <div class="product_image apple_image"></div>
-                        <h3 class="product_name">iPhone 15 pro max</h3>
-                        <div class="product_specs">
-                            • Tela 6.1" Super Retina XDR<br>
-                            • Chip A16 Bionic<br>
-                            • Câmera 48MP + 12MP<br>
-                            • 128GB de armazenamento<br>
-                            • 5G, Face ID, USB-C
-                        </div>
-                        <div class="product_price apple_price">R$ 6.999</div>
-                        <button class="buy_btn apple_btn" onclick="buyProduct('iPhone 15')">Comprar Agora</button>
-                    </div>
-
-                    <div class="product_card apple_card">
-                        <div class="brand_badge apple_badge">Apple</div>
-                        <div class="product_image apple_image"></div>
-                        <h3 class="product_name">iPhone 13</h3>
-                        <div class="product_specs">
-                            • Tela 6.1" Super Retina XDR<br>
-                            • Chip A15 Bionic<br>
-                            • Câmera 12MP + 12MP<br>
-                            • 128GB de armazenamento<br>
-                            • 5G, Face ID, Lightning
-                        </div>
-                        <div class="product_price apple_price">R$ 5.499</div>
-                        <button class="buy_btn apple_btn" onclick="buyProduct('iPhone 14')">Comprar Agora</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Samsung -->
-            <div class="brand_section" data-brand="samsung">
-                <div class="brand_header samsung_header">
-                    <div class="brand_title">Samsung</div>
-                </div>
-                <div class="products_grid">
-                    <div class="product_card samsung_card">
-                        <div class="brand_badge samsung_badge">Samsung</div>
-                        <div class="product_image samsung_image"></div>
-                        <h3 class="product_name">Galaxy S25 Ultra</h3>
-                        <div class="product_specs">
-                            • Tela 6.8" Dynamic AMOLED 2X<br>
-                            • Snapdragon 8 Gen 3<br>
-                            • Câmera 200MP + 50MP + 12MP<br>
-                            • 512GB de armazenamento<br>
-                            • 5G, S Pen, Galaxy AI
-                        </div>
-                        <div class="product_price samsung_price">R$ 7.899</div>
-                        <button class="buy_btn samsung_btn" onclick="buyProduct('Galaxy S24 Ultra')">Comprar Agora</button>
-                    </div>
-
-                    <div class="product_card samsung_card">
-                        <div class="brand_badge samsung_badge">Samsung</div>
-                        <div class="product_image samsung_image"></div>
-                        <h3 class="product_name">Galaxy A55</h3>
-                        <div class="product_specs">
-                            • Tela 6.4" Super AMOLED<br>
-                            • Exynos 1380<br>
-                            • Câmera 50MP + 12MP + 5MP<br>
-                            • 256GB de armazenamento<br>
-                            • 5G, Knox Security
-                        </div>
-                        <div class="product_price samsung_price">R$ 1.899</div>
-                        <button class="buy_btn samsung_btn" onclick="buyProduct('Galaxy A54 5G')">Comprar Agora</button>
-                    </div>
-
-                    <div class="product_card samsung_card">
-                        <div class="brand_badge samsung_badge">Samsung</div>
-                        <div class="product_image samsung_image"></div>
-                        <h3 class="product_name">Galaxy A16</h3>
-                        <div class="product_specs">
-                            • Tela 6.5" Super AMOLED<br>
-                            • MediaTek Helio G99<br>
-                            • Câmera 50MP + 5MP + 2MP<br>
-                            • 128GB de armazenamento<br>
-                            • Bateria 5000mAh
-                        </div>
-                        <div class="product_price samsung_price">R$ 999</div>
-                        <button class="buy_btn samsung_btn" onclick="buyProduct('Galaxy A15')">Comprar Agora</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Xiaomi -->
-            <div class="brand_section" data-brand="xiaomi">
-                <div class="brand_header xiaomi_header">
-                    <div class="brand_title">Xiaomi</div>
-                </div>
-                <div class="products_grid">
-                    <div class="product_card xiaomi_card">
-                        <div class="brand_badge xiaomi_badge">Xiaomi</div>
-                        <div class="product_image xiaomi_image"></div>
-                        <h3 class="product_name">Poco x7 pro</h3>
-                        <div class="product_specs">
-                            • Tela 6.73" LTPO AMOLED<br>
-                            • Snapdragon 8 Gen 3<br>
-                            • Câmera 50MP + 50MP + 50MP<br>
-                            • 512GB de armazenamento<br>
-                            • Carregamento 90W sem fio
-                        </div>
-                        <div class="product_price xiaomi_price">R$ 5.999</div>
-                        <button class="buy_btn xiaomi_btn" onclick="buyProduct('Xiaomi 14 Ultra')">Comprar Agora</button>
-                    </div>
-
-                    <div class="product_card xiaomi_card">
-                        <div class="brand_badge xiaomi_badge">Xiaomi</div>
-                        <div class="product_image xiaomi_image"></div>
-                        <h3 class="product_name">Poco c75</h3>
-                        <div class="product_specs">
-                            • Tela 6.67" AMOLED 120Hz<br>
-                            • Snapdragon 7s Gen 2<br>
-                            • Câmera 200MP + 8MP + 2MP<br>
-                            • 256GB de armazenamento<br>
-                            • Carregamento 67W
-                        </div>
-                        <div class="product_price xiaomi_price">R$ 1.699</div>
-                        <button class="buy_btn xiaomi_btn" onclick="buyProduct('Redmi Note 13 Pro')">Comprar Agora</button>
-                    </div>
-
-                    <div class="product_card xiaomi_card">
-                        <div class="brand_badge xiaomi_badge">Xiaomi</div>
-                        <div class="product_image xiaomi_image"></div>
-                        <h3 class="product_name">Redmi Note 13</h3>
-                        <div class="product_specs">
-                            • Tela 6.74" IPS LCD<br>
-                            • MediaTek Helio G85<br>
-                            • Câmera 50MP + 2MP<br>
-                            • 128GB de armazenamento<br>
-                            • Bateria 5000mAh
-                        </div>
-                        <div class="product_price xiaomi_price">R$ 699</div>
-                        <button class="buy_btn xiaomi_btn" onclick="buyProduct('Redmi 13C')">Comprar Agora</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <script src="{% static "js/launch.js" %}"></script>
 </body>
 </html>
-        
