@@ -189,19 +189,6 @@ h1 {
   }
 }
 
-.flash_sale {
-  position: absolute;
-  top: 20px;
-  left: -30px;
-  background: #ffd700;
-  color: #333;
-  padding: 0.5rem 2rem;
-  transform: rotate(-15deg);
-  font-weight: bold;
-  font-size: 0.9rem;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-}
-
 .product_image {
   width: 180px;
   height: 180px;
@@ -285,38 +272,6 @@ h1 {
   transform: translateY(-3px);
   box-shadow: 0 10px 25px rgba(255, 71, 87, 0.6);
   background: linear-gradient(45deg, #ff3742, #ff5757);
-}
-
-.btn-whatsapp {
-  background: linear-gradient(45deg, #25d366, #20bf55);
-  box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
-}
-
-.btn-whatsapp:hover {
-  background: linear-gradient(45deg, #20bf55, #1ea049);
-  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.6);
-}
-
-.limited_stock {
-  background: #ff9f43;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  margin: 1rem 0;
-  display: inline-block;
-  font-weight: bold;
-  animation: blink 2s ease-in-out infinite;
-}
-
-@keyframes blink {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.7;
-  }
 }
 
 .contact-info {
